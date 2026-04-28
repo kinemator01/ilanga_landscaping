@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iLanga Landscaping — Cape Town</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<nav class="nav" id="mainNav">
+  <div class="nav-logo">i<span>L</span>anga<br><small style="font-size:0.55em;font-weight:400;font-family:'DM Sans',sans-serif;color:rgba(255,255,255,0.7);letter-spacing:0.1em;text-transform:uppercase;">Landscaping</small></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <!-- FIX: converted to <button> with aria-expanded for accessibility -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────────── -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="hero-tag">📍 Cape Town, South Africa</span>
+    <h1>Your Garden,<br><em>Beautifully</em><br>Transformed.</h1>
+    <p>From wild overgrowth to welcoming outdoor escapes — we design, build, and maintain gardens and courtyards for homes, businesses, and warehouses across Cape Town.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get a Free Quote</a>
+      <a href="#services" class="btn-outline">Our Services</a>
+    </div>
+    <!-- FIX: stats moved inside hero-content flow instead of being absolutely positioned -->
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Happy Clients</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Satisfaction</span></div>
+      <div class="stat"><span class="stat-num">2024</span><span class="stat-label">Est.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY US ───────────────────────────────────────────── -->
+<section class="section why">
+  <div class="why-inner">
+    <div>
+      <span class="section-tag">Why choose us</span>
+      <h2 class="section-title">We treat your garden<br>like <em>our own</em>.</h2>
+      <p class="section-subtitle">Ilanga Landscaping isn't just another garden service. We care about the result, your budget, and your peace of mind — whether it's a home garden, business grounds, or a warehouse courtyard.</p>
+    </div>
+    <div class="why-cards">
+      <div class="why-card">
+        <div class="why-card-icon">🎓</div>
+        <h4>Degree-Qualified Expertise</h4>
+        <p>Our founder holds a formal landscaping qualification — you get real knowledge, not guesswork.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">💬</div>
+        <h4>Clear Communication</h4>
+        <p>No surprises. We quote honestly and keep you in the loop at every step.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">🏭</div>
+        <h4>Residential &amp; Commercial</h4>
+        <p>From private gardens to warehouse courtyards — we handle outdoor spaces of all kinds.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">💰</div>
+        <h4>Fair Pricing</h4>
+        <p>We keep our costs lean so you get professional results at honest rates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ──────────────────────────────────────────── -->
+<section class="section gallery">
+  <div class="gallery-inner">
+    <div class="gallery-header">
+      <span class="section-tag">Our recent work</span>
+      <h2 class="section-title">Gardens we've <em>brought to life</em></h2>
+      <p class="section-subtitle">Every project is different. Here's a taste of what we've done across Cape Town.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/image_1.jpg" alt="Garden design project">
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Garden Design</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/image_2.jpg" alt="Tree felling">
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Tree Felling</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/image_3.jpg" alt="Hedge trimming">
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Hedge Trimming</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ─────────────────────────────────────────── -->
+<section class="section services" id="services">
+  <div class="services-inner">
+    <div class="services-header">
+      <span class="section-tag">What we do</span>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Professional garden and landscape services for residential homes, commercial properties, and warehouse courtyards across Cape Town.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-item">
+        <span class="service-icon">🌾</span>
+        <h3>Brush Cutting</h3>
+        <p>Clearing overgrown grass, weeds, and dense vegetation to restore your outdoor space.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon">🌳</span>
+        <h3>Tree Felling</h3>
+        <p>Safe, professional removal of unwanted or dangerous trees on your property.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon">✂️</span>
+        <h3>Hedge Trimming</h3>
+        <p>Neat, precise hedge and shrub shaping that keeps your garden looking sharp.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon">🪵</span>
+        <h3>Stump Removal</h3>
+        <p>Clean stump extraction so you can reclaim that patch of garden completely.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon">🌿</span>
+        <h3>Herbicide Spraying</h3>
+        <p>Targeted weed control to keep unwanted growth away for longer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ────────────────────────────────────────────── -->
+<section class="section about" id="about">
+  <div class="about-inner">
+    <div class="about-video-wrap">
+      <video controls>
+        <source src="videos/video_1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="about-text">
+      <span class="section-tag">Our story</span>
+      <h2 class="section-title">Founded on a love<br>for <em>outdoor spaces</em>.</h2>
+      <p>Founded in 2024 by Nicholas Phali, Ilanga Landscaping started with a simple belief: every outdoor space deserves to be cared for properly. Nicholas holds a formal qualification in Landscaping, bringing real expertise — not just a lawnmower — to every job.</p>
+      <p>We work with homeowners, businesses, and warehouse operators across Cape Town to design, build, and care for outdoor spaces — from private gardens to industrial courtyards — that reflect nature, harmony, and real quality of life.</p>
+      <p>Whether it's a quick cleanup or a full transformation, we show up, do great work, and leave your space better than we found it.</p>
+      <div class="about-badge">🎓 Qualified in Landscaping &nbsp;·&nbsp; 🌍 Cape Town Based</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ──────────────────────────────────────────── -->
+<section class="section contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <span class="section-tag">Get in touch</span>
+      <h2 class="section-title">Let's build your<br><em>dream garden</em>.</h2>
+      <p>Fill in the form and we'll send your enquiry straight to our WhatsApp. We typically respond within a few hours.</p>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <div class="contact-detail-text">
+          <strong>Location</strong>
+          <span>Cape Town, South Africa</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📞</div>
+        <div class="contact-detail-text">
+          <strong>Call or WhatsApp</strong>
+          <a href="tel:+27647331082">+27 647 331 082</a><br>
+          <a href="tel:+27680603929">+27 680 603 929</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✉️</div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          <!-- FIX: plain mailto link — Cloudflare obfuscation removed for local use -->
+          <a href="mailto:info@ilangalandscaping.co.za">info@ilangalandscaping.co.za</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WhatsApp Form -->
+    <div class="contact-form-card">
+      <div class="form-header">
+        <div class="form-header-icon">💬</div>
+        <div class="form-header-text">
+          <strong>Send us a WhatsApp Quote Request</strong>
+          <span>Quick, easy &amp; no cost to you</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Your Name</label>
+          <input type="text" id="fname" placeholder="e.g. Sarah">
+        </div>
+        <div class="form-group">
+          <label for="fphone">Your Number</label>
+          <input type="tel" id="fphone" placeholder="+27 ...">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="fservice">Service Needed</label>
+        <select id="fservice">
+          <option value="">— Select a service —</option>
+          <option>Brush Cutting</option>
+          <option>Tree Felling</option>
+          <option>Hedge Trimming</option>
+          <option>Stump Removal</option>
+          <option>Herbicide Spraying</option>
+          <option>Full Garden Makeover</option>
+          <option>Other / Not sure yet</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="farea">Area / Suburb</label>
+        <input type="text" id="farea" placeholder="e.g. Claremont, Bellville...">
+      </div>
+
+      <div class="form-group">
+        <label for="fmsg">Tell us more (optional)</label>
+        <textarea id="fmsg" rows="3" placeholder="Any extra details about your garden or what you need..."></textarea>
+      </div>
+
+      <button class="wa-submit" id="waBtn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.112 1.532 5.836L.057 23.797l6.169-1.448A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.032-1.386l-.361-.214-3.741.979 1.003-3.63-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Send via WhatsApp
+      </button>
+      <p class="form-note">You'll be taken to WhatsApp with your message pre-filled ✓</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER (redesigned) ───────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-top">
+
+    <!-- Brand column -->
+    <div class="footer-brand">
+      <span class="footer-logo">i<span>L</span>anga</span>
+      <span class="footer-tagline-sub">Landscaping</span>
+      <p>Professional garden and landscape services for homes, businesses, and warehouse courtyards across Cape Town. We show up, do great work, and leave your space better than we found it.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" title="Facebook">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" title="Instagram">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://wa.me/27647331082" aria-label="WhatsApp" title="WhatsApp">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.112 1.532 5.836L.057 23.797l6.169-1.448A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.032-1.386l-.361-.214-3.741.979 1.003-3.63-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation column -->
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Get a Quote</a></li>
+      </ul>
+    </div>
+
+    <!-- Services column -->
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Brush Cutting</a></li>
+        <li><a href="#services">Tree Felling</a></li>
+        <li><a href="#services">Hedge Trimming</a></li>
+        <li><a href="#services">Stump Removal</a></li>
+        <li><a href="#services">Herbicide Spraying</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact column -->
+    <div class="footer-col">
+      <h5>Contact Us</h5>
+      <div class="footer-contact-list">
+        <div class="footer-contact-item">
+          <div class="fci-icon">📍</div>
+          <div class="fci-text">Cape Town, South Africa</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="fci-icon">📞</div>
+          <div class="fci-text">
+            <a href="tel:+27647331082">+27 647 331 082</a><br>
+            <a href="tel:+27680603929">+27 680 603 929</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="fci-icon">✉️</div>
+          <div class="fci-text">
+            <a href="mailto:info@ilangalandscaping.co.za">info@ilangalandscaping.co.za</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /footer-top -->
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 iLanga Landscaping. All rights reserved. Cape Town, South Africa.</p>
+    <span class="footer-cert">🎓 Formally Qualified in Landscaping</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
