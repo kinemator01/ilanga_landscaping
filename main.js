@@ -31,6 +31,31 @@ navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   hamburger.querySelectorAll('span').forEach(s => s.style.cssText = '');
 }));
 
+// ── Lightbox
+const lightbox      = document.getElementById('lightbox');
+const lightboxImg   = document.getElementById('lightboxImg');
+const lightboxLabel = document.getElementById('lightboxLabel');
+const lightboxClose = document.getElementById('lightboxClose');
+
+document.querySelectorAll('.btn-view-img').forEach(btn => {
+  btn.addEventListener('click', () => {
+    lightboxImg.src       = btn.dataset.src;
+    lightboxImg.alt       = btn.dataset.label;
+    lightboxLabel.textContent = btn.dataset.label;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
 // ── WhatsApp form builder
 document.getElementById('waBtn').addEventListener('click', () => {
   const name    = document.getElementById('fname').value.trim();
@@ -54,5 +79,5 @@ document.getElementById('waBtn').addEventListener('click', () => {
 
   const encoded = encodeURIComponent(text);
   // Use the primary WhatsApp number
-  window.open(`https://wa.me/27647331082?text=${encoded}`, '_blank');
+  window.open(`https://wa.me/27621433881?text=${encoded}`, '_blank');
 });
